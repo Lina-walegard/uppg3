@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nexport var __N_SSG = true;\nexport default function Faq(_ref) {\n  var allData = _ref.allData;\n  return /*#__PURE__*/_jsx(\"div\", {\n    className: \"wrap\",\n    children: /*#__PURE__*/_jsx(\"h1\", {\n      children: allData\n    })\n  });\n}","map":null,"metadata":{},"sourceType":"module"}

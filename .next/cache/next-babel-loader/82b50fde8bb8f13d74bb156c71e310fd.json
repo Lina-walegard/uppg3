@@ -1,1 +1,0 @@
-{"ast":null,"code":"const withSass = require(\"@zeit/next-sass\");\n\nmodule.exports = withSass({\n  cssModules: true\n});","map":null,"metadata":{},"sourceType":"script"}
