@@ -1,0 +1,1 @@
+{"ast":null,"code":"export async function getAboutData() {\n  return \"A sample about text\";\n}\nexport async function getFaqData() {\n  return \"A sample FAQ text\";\n}\nexport async function getContactData() {\n  return \"A sample contact text\";\n}","map":null,"metadata":{},"sourceType":"module"}

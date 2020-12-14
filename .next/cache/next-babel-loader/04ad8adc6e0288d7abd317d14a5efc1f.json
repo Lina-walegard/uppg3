@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React, { createContext } from \"react\";\nconst LangContext = /*#__PURE__*/React.createContext({\n  lang: \"sv\",\n  setLanguage: () => {}\n});\nexport default LangContext;","map":null,"metadata":{},"sourceType":"module"}

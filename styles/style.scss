@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap");
+
+$colorDark: #473b49;
+$colorLight: rgb(225, 230, 228);
+$buttonBgColor: rgb(51, 51, 51);
+$buttonColor: White;
+$textColor: rgb(63, 56, 63);
+$black: rgb(41, 41, 41);
+$breakpoint-tablet: 768px;
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Baloo Tamma 2", cursive;
+  background-color: $colorLight;
+}
+
+img {
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+h1 {
+  font-size: calc(15px + 2vmin);
+  text-align: center;
+  font-weight: bold;
+  color: $textColor;
+}
+
+Button {
+  background-color: $buttonBgColor;
+  color: $buttonColor;
+  padding: 12px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.Nav {
+  //float: right;
+  // border-top: 40px solid $darkPurp2;
+  //background-color: $darkPurp2;
+  line-height: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  //margin-top: 40px;
+
+  ul {
+    float: right;
+    padding-right: 40px;
+  }
+
+  li {
+    display: inline;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  a:hover {
+    color: rgb(113, 180, 177);
+
+    //padding-bottom: 10px;
+  }
+}
+
+.Mobile-nav {
+  cursor: pointer;
+  color: white;
+  right: 50px;
+  position: absolute;
+  z-index: 51;
+  top: 25px;
+
+  p {
+    padding-right: 50px;
+  }
+
+  ul {
+    padding: 0;
+    float: left;
+  }
+
+  li {
+    padding-top: 10px;
+    display: block;
+    border-bottom: 2.5px solid #dedfe0;
+    min-width: 215px;
+  }
+
+  a {
+    color: white;
+    font-size: 20px;
+    //padding-right: 180px;
+  }
+}
+
+.App-header {
+  background-color: #292929;
+  padding: 20px;
+}
+
+.menuHeader {
+  padding-bottom: 10px;
+  width: 90%;
+}
+
+.menuImg {
+  position: absolute;
+  z-index: 51;
+}
+
+.menuPop {
+  position: fixed;
+  top: 0;
+  right: 0%;
+  background-color: $black;
+  width: 300px;
+  height: 100%;
+  z-index: 50;
+  padding: 30px 0px 0px 40px;
+}
+
+.MenuRestOfContent {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  right: 0;
+  background: white;
+  opacity: 0.9 !important;
+}
+
+.wrap {
+  width: 100%;
+  margin-top: 10%;
+  height: 100%;
+  min-height: 700px;
+}
+
+.formWrapper {
+  margin: 0 auto;
+  width: 70%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(193, 193, 193, 0.75);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(193, 193, 193, 0.75);
+  box-shadow: 0px 0px 6px 0px rgba(193, 193, 193, 0.75);
+}
+
+.formStyle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $textColor;
+  font-size: calc(7px + 2vmin);
+  width: calc(70% + 20vmin);
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  justify-content: center;
+  display: grid;
+  grid-gap: 15px;
+  grid-column-gap: 20px;
+  grid-template-columns: 40% 20% 50px 15%;
+  grid-template-rows: auto;
+  border-radius: 10px;
+
+  .coinWrapper {
+    display: contents;
+
+    input {
+      border-radius: 5px;
+      height: 30px;
+      //width: 100px;
+
+      float: right;
+    }
+  }
+
+  .labelItemTotal {
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-top: 30px;
+  }
+}
+
+.contact {
+  background-color: $black;
+  width: 100%;
+  height: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+
+  h2 {
+    padding: 30px;
+  }
+
+  p {
+    padding-left: 30px;
+  }
+
+  Button {
+    background-color: $black;
+    color: $colorDark;
+    padding: 5px 10px;
+    align-self: center;
+  }
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+}
+
+@media (max-width: 1400px) {
+  .formWrapper {
+    width: 100%;
+  }
+}
